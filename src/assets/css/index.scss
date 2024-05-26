@@ -1,0 +1,103 @@
+.dndflow {
+	flex-direction: column;
+	display: flex;
+	flex-grow: 1;
+	height: 100%;
+	aside {
+		border-left: 1px solid #cacaca;
+		font-size: 12px;
+		.description {
+			margin-bottom: 10px;
+		}
+	}
+	.dndnode {
+		height: 65px;
+		padding: 4px;
+		width: 60%;
+		border: 2px solid #1a192b;
+		border-radius: 5px;
+		margin-bottom: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: grab;
+		border-color: #adadce;
+		.text {
+			color: #6f7596;
+		}
+	}
+	.reactflow-wrapper {
+		flex-grow: 1;
+		height: 100%;
+	}
+	.selectall {
+		margin-top: 10px;
+	}
+}
+.save-wrapper {
+	background-color: #f3f3f3;
+	height: 60px;
+	.btn-outline-secondary {
+		color: #6f7596;
+		background-color: white;
+		width: 150px;
+		font-weight: 600;
+		font-size: 13px;
+		&:hover {
+			background-color: #6f7596;
+			color: white;
+		}
+	}
+}
+.settings-head {
+	height: 35px;
+	padding: 10px;
+}
+#nodeData {
+	padding: 5px;
+	border: 1px solid #adadce;
+	border-radius: 4px;
+}
+.text-updater-node {
+	min-height: 50px;
+	height: auto;
+	width: 150px;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	background: white;
+	.head-text {
+		font-size: 7px;
+		font-weight: 600;
+		margin-left: 2px;
+	}
+	.body-text {
+		font-size: 8px;
+		word-break: break-all;
+	}
+}
+.node-head {
+	background-color: #b2f0e3;
+	height: 20px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.whatsapp-div {
+	background-color: white;
+	padding: 3px;
+	border-radius: 50%;
+}
+.react-flow__node {
+	&.selected {
+		border: 1px solid blue;
+		border-radius: 5px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.dndflow {
+		flex-direction: row;
+		aside {
+			width: 20%;
+		}
+	}	
+}
